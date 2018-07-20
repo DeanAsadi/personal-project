@@ -1,0 +1,141 @@
+img {
+  width: 100%;
+}
+
+li {
+  margin-left: -50px;
+}
+
+.landing {
+  position: relative;
+  background: url("./img/showcase.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  margin-bottom: -50px;
+}
+.card {
+  background-color: #343a40;
+  margin: 20px;
+  color: white;
+}
+.img-fluid {
+  max-width: 50%;
+}
+.btn-dark {
+  margin: 50px;
+}
+
+.col-md-8 {
+  background-color: black;
+  padding: 20px;
+}
+
+.list-group {
+  text-align: center;
+}
+
+.p {
+  margin-left: 10px;
+  color: white;
+}
+.p2 {
+  justify-content: space-between;
+}
+.p3 {
+  margin-left: 10px;
+  color: white;
+}
+.p-3 {
+  color: white;
+}
+.nounderline {
+  text-decoration: none !important;
+}
+.down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 298px;
+}
+.row {
+  margin-top: 20px;
+}
+.display-4 {
+  color: darkblue;
+}
+.display-3 {
+  color: darkblue;
+}
+
+.list-group-item {
+  background-color: #343a40;
+}
+.skills {
+  margin-left: -105px;
+}
+.h4,
+h4 {
+  color: white;
+}
+.lead {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.ff {
+  margin-left: 5%;
+}
+
+.bb {
+  margin-right: -450px;
+}
+.copyRight {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+#root > div > div.pos-f-t.nounderline > nav > span > div > a:nth-child(1),
+#root > div > div.pos-f-t.nounderline > nav > span > div > a.p3,
+#root > div > div.pos-f-t.nounderline > nav > div > a:nth-child(1),
+#root > div > div.pos-f-t.nounderline > nav > div > a.p3,
+#root > div > div.pos-f-t.nounderline > nav > span > div > a:nth-child(2),
+#root > div > div.pos-f-t.nounderline > nav > span > div > a:nth-child(3) {
+  text-decoration: none;
+  color: red;
+  outline: none;
+}
+
+#root > div > div.landing > div > div > div > div > p,
+#root
+  > div
+  > div.container
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(3)
+  > h4 {
+  color: darkblue;
+}
+#root
+  > div
+  > div.container
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div.col-md-10
+  > span
+  > button.btn.btn-outline-primary.btn-rounded.waves-effect
+  > a {
+  text-decoration: none;
+  outline: none;
+}
+.list-group10 {
+  color: white;
+}
