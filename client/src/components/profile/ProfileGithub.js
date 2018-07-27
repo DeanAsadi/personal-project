@@ -6,8 +6,8 @@ class ProfileGithub extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clientId: "26c196bacea7db10cf48",
-      clientSecret: "0885cb690e07d2a93a6afb0891fb552fd9f7aa53",
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
       count: 5,
       sort: "created: asc",
       repos: []
@@ -33,31 +33,37 @@ class ProfileGithub extends Component {
   render() {
     const { repos } = this.state;
 
-    const repoItems = repos.map(repo => (
-      <div key={repo.id} className="card card-body mb-2 ">
-        <div className="row ">
-          <div className="col-md-6">
-            <h4>
-              <Link to={repo.html_url} className="text-primary" target="_blank">
-                {repo.name}
-              </Link>
-            </h4>
-            <p>{repo.description}</p>
-          </div>
-          <div className="col-md-6">
-            <span className="badge badge-info mr-1">
-              Stars: {repo.stargazers_count}
-            </span>
-            <span className="badge badge-secondary mr-1">
-              Watchers: {repo.watchers_count}
-            </span>
-            <span className="badge badge-success">
-              Forks: {repo.forks_count}
-            </span>
+    const repoItems =
+      repos.length &&
+      repos.map(repo => (
+        <div key={repo.id} className="card card-body mb-2 ">
+          <div className="row ">
+            <div className="col-md-6">
+              <h4>
+                <Link
+                  to={repo.html_url}
+                  className="text-primary"
+                  target="_blank"
+                >
+                  {repo.name}
+                </Link>
+              </h4>
+              <p>{repo.description}</p>
+            </div>
+            <div className="col-md-6">
+              <span className="badge badge-info mr-1">
+                Stars: {repo.stargazers_count}
+              </span>
+              <span className="badge badge-secondary mr-1">
+                Watchers: {repo.watchers_count}
+              </span>
+              <span className="badge badge-success">
+                Forks: {repo.forks_count}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    ));
+      ));
     return (
       <div ref="myRef">
         <hr />
